@@ -5,8 +5,8 @@ const LiveButton = () => {
     <Link href="/upptokur">
       <Box
         display="flex"
-        justifyContent="spaceBetween"
         alignItems="center"
+        justifyContent={'center'}
         padding={3}
         background="purple100"
         borderRadius="standard"

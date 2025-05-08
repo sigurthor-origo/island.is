@@ -7,8 +7,16 @@ import {
   Text,
 } from '@island.is/island-ui/core'
 import * as styles from './SidebarNavigation.css'
+import { useIsDesktop } from '../../utils/useDesktop'
+import LiveButton from '../LiveButton/LiveButton'
 
 export const SidebarNavigation = ({ active }: { active: string }) => {
+  const isDesktop = useIsDesktop()
+
+  if (isDesktop === null) {
+    return null // Or show a loading indicator
+  }
+
   const menuItems = [
     { title: 'Forsíða', href: '/', active: active === '/', items: [] },
     {
@@ -74,6 +82,12 @@ export const SidebarNavigation = ({ active }: { active: string }) => {
 
   return (
     <div>
+      {!isDesktop && (
+        <Box marginBottom={3}>
+          <LiveButton />
+        </Box>
+      )}
+
       <Navigation baseId="althingi" title="Efnisyfirlit" items={menuItems} />
 
       <Box

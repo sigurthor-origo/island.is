@@ -47,7 +47,7 @@ const mockData = [
         <Text marginBottom={2}>Innviðaráðherra</Text>
         <Link href="#">
           <Text color="blue400" fontWeight="semiBold">
-            eyjolfur.armannsson@althingi.is
+            eyjolfur.a@althingi.is
           </Text>
         </Link>
         <Box display={'flex'} justifyContent={'flexEnd'} marginTop={2}>

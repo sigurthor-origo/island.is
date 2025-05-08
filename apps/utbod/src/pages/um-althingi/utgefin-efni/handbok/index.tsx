@@ -75,7 +75,7 @@ export const Index = () => {
       ]}
       sidebar={
         <SidebarInfo
-          backHref="/thingfundir-og-mal/thingmalalistar/lagafrumvorp"
+          backHref="/"
           menuChildren={
             <>
               <Box
