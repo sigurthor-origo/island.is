@@ -59,6 +59,148 @@ const mockData = [
     ),
     image: 'https://www.althingi.is/myndir/thingmenn-cache/1413/1413-220.jpg',
   },
+  {
+    name: 'Ingibjörg Isaksen',
+    href: '#',
+    description: (
+      <Box>
+        <Text marginBottom={2}>Formaður þingflokks</Text>
+        <Link href="#">
+          <Text color="blue400" fontWeight="semiBold">
+            ingibjorg.i@althingi.is
+          </Text>
+        </Link>
+        <Box display={'flex'} justifyContent={'flexEnd'} marginTop={2}>
+          <Tag variant="darkerBlue" outlined disabled>
+            Framsóknarflokkur
+          </Tag>
+        </Box>
+      </Box>
+    ),
+    image: 'https://www.althingi.is/myndir/thingmenn-cache/1410/1410-220.jpg',
+  },
+  {
+    name: 'Alma D. Möller',
+    href: '/thingmenn/alma-d-moller',
+    description: (
+      <Box>
+        <Text marginBottom={2}>Heilbrigðisráðherra</Text>
+        <Link href="#">
+          <Text color="blue400" fontWeight="semiBold">
+            alma.moller@althingi.is
+          </Text>
+        </Link>
+        <Box display={'flex'} justifyContent={'flexEnd'} marginTop={2}>
+          <Tag variant="darkerBlue" outlined disabled>
+            Samfylkingin
+          </Tag>
+        </Box>
+      </Box>
+    ),
+    image:
+      'https://www.government.is/lisalib/getfile.aspx?itemid=c4a8641f-bfa5-11ef-b88c-005056bcde1f&proc=radherrar',
+  },
+  {
+    name: 'Eyjólfur Ármannsson',
+    href: '#',
+    description: (
+      <Box>
+        <Text marginBottom={2}>Innviðaráðherra</Text>
+        <Link href="#">
+          <Text color="blue400" fontWeight="semiBold">
+            eyjolfur.a@althingi.is
+          </Text>
+        </Link>
+        <Box display={'flex'} justifyContent={'flexEnd'} marginTop={2}>
+          <Tag variant="darkerBlue" outlined disabled>
+            Flokkur fólksins
+          </Tag>
+        </Box>
+      </Box>
+    ),
+    image: 'https://www.althingi.is/myndir/thingmenn-cache/1413/1413-220.jpg',
+  },
+  {
+    name: 'Ingibjörg Isaksen',
+    href: '#',
+    description: (
+      <Box>
+        <Text marginBottom={2}>Formaður þingflokks</Text>
+        <Link href="#">
+          <Text color="blue400" fontWeight="semiBold">
+            ingibjorg.i@althingi.is
+          </Text>
+        </Link>
+        <Box display={'flex'} justifyContent={'flexEnd'} marginTop={2}>
+          <Tag variant="darkerBlue" outlined disabled>
+            Framsóknarflokkur
+          </Tag>
+        </Box>
+      </Box>
+    ),
+    image: 'https://www.althingi.is/myndir/thingmenn-cache/1410/1410-220.jpg',
+  },
+  {
+    name: 'Alma D. Möller',
+    href: '/thingmenn/alma-d-moller',
+    description: (
+      <Box>
+        <Text marginBottom={2}>Heilbrigðisráðherra</Text>
+        <Link href="#">
+          <Text color="blue400" fontWeight="semiBold">
+            alma.moller@althingi.is
+          </Text>
+        </Link>
+        <Box display={'flex'} justifyContent={'flexEnd'} marginTop={2}>
+          <Tag variant="darkerBlue" outlined disabled>
+            Samfylkingin
+          </Tag>
+        </Box>
+      </Box>
+    ),
+    image:
+      'https://www.government.is/lisalib/getfile.aspx?itemid=c4a8641f-bfa5-11ef-b88c-005056bcde1f&proc=radherrar',
+  },
+  {
+    name: 'Eyjólfur Ármannsson',
+    href: '#',
+    description: (
+      <Box>
+        <Text marginBottom={2}>Innviðaráðherra</Text>
+        <Link href="#">
+          <Text color="blue400" fontWeight="semiBold">
+            eyjolfur.a@althingi.is
+          </Text>
+        </Link>
+        <Box display={'flex'} justifyContent={'flexEnd'} marginTop={2}>
+          <Tag variant="darkerBlue" outlined disabled>
+            Flokkur fólksins
+          </Tag>
+        </Box>
+      </Box>
+    ),
+    image: 'https://www.althingi.is/myndir/thingmenn-cache/1413/1413-220.jpg',
+  },
+  {
+    name: 'Ingibjörg Isaksen',
+    href: '#',
+    description: (
+      <Box>
+        <Text marginBottom={2}>Formaður þingflokks</Text>
+        <Link href="#">
+          <Text color="blue400" fontWeight="semiBold">
+            ingibjorg.i@althingi.is
+          </Text>
+        </Link>
+        <Box display={'flex'} justifyContent={'flexEnd'} marginTop={2}>
+          <Tag variant="darkerBlue" outlined disabled>
+            Framsóknarflokkur
+          </Tag>
+        </Box>
+      </Box>
+    ),
+    image: 'https://www.althingi.is/myndir/thingmenn-cache/1410/1410-220.jpg',
+  },
 ]
 
 export const Thingmenn = () => {

@@ -25,6 +25,7 @@ const mockData = [
     date: new Date('2025-05-05'),
     title: 'Landlæknir og lýðheilsa o.fl. (heilbrigðuisskráro.fl.)',
     href: '#',
+    name: 'Alma D. Möller',
     presenter: 'Heilbrigðisráðherra',
     presenterHref: '#',
   },
@@ -33,6 +34,7 @@ const mockData = [
     date: new Date('2025-05-04'),
     title: 'Lyfjalög og læknistæki (EES-reglur)',
     href: '#',
+    name: 'Alma D. Möller',
     presenter: 'Heilbrigðisráðherra',
     presenterHref: '#',
   },
@@ -41,6 +43,7 @@ const mockData = [
     date: new Date('2025-05-03'),
     title: 'Peningastefnan og fjármálastöðugleiki',
     href: '#',
+    name: 'Ásgeir Jónsson',
     presenter: 'Seðlabanki Íslands',
     presenterHref: '#',
   },
@@ -49,6 +52,7 @@ const mockData = [
     date: new Date('2025-05-03'),
     title: 'Ávana- og fíkniefni (EES-reglur)',
     href: '/thingfundir-og-mal/thingmalalistar/lagafrumvorp/avana-og-fikniefni',
+    name: 'Alma D. Möller',
     presenter: 'Heilbrigðisráðherra',
     presenterHref: '#',
   },
@@ -166,6 +170,9 @@ export const Malalisti = () => {
                   <T.Data>
                     <Link href={item.presenterHref}>
                       <Tag>{item.presenter}</Tag>
+                      <Text marginTop={1} variant="eyebrow" fontWeight="light">
+                        {item.name}
+                      </Text>
                     </Link>
                   </T.Data>
                 </T.Row>
