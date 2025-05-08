@@ -18,6 +18,7 @@ export interface ProfileCardProps {
    * Usually name or important short text
    */
   title?: string
+  titleHref?: string
   /**
    * Usually job description
    */
@@ -50,6 +51,7 @@ export interface ProfileCardProps {
 export const ProfileCard: FC<React.PropsWithChildren<ProfileCardProps>> = ({
   image,
   title,
+  titleHref,
   description,
   heightFull,
   size = 'default',
@@ -88,7 +90,7 @@ export const ProfileCard: FC<React.PropsWithChildren<ProfileCardProps>> = ({
         />
       )}
       <Box padding={3} paddingBottom={link ? 6 : 3}>
-        {title && variant === 'default' && (
+        {title && variant === 'default' && !titleHref ? (
           <Text
             color={disabled ? 'dark300' : 'dark400'}
             variant="h4"
@@ -96,6 +98,16 @@ export const ProfileCard: FC<React.PropsWithChildren<ProfileCardProps>> = ({
           >
             {title}
           </Text>
+        ) : (
+          <Link href={titleHref ? titleHref : '#'}>
+            <Text
+              color={disabled ? 'dark300' : 'blue400'}
+              variant="h4"
+              marginBottom={1}
+            >
+              {title}
+            </Text>
+          </Link>
         )}
         <Box paddingBottom={link ? 2 : 0}>
           <Stack space={0}>

@@ -32,6 +32,8 @@ export type CategoryCardProps = {
   headingAs?: TextProps['as']
   headingVariant?: TextProps['variant']
   text: string
+  subtext?: string
+  date: string
   textVariant?: 'default' | 'medium' | 'small'
   textFontWeight?: 'light' | 'regular'
   tags?: Tag[]
@@ -95,6 +97,8 @@ const Component = forwardRef<
       headingVariant = 'h3',
       icon,
       text,
+      subtext,
+      date,
       textVariant = 'default',
       textFontWeight = 'regular',
       href = '/',
@@ -152,6 +156,27 @@ const Component = forwardRef<
             <Box
               display="flex"
               flexDirection="row"
+              alignItems="center"
+              justifyContent="spaceBetween"
+            >
+              <Text
+                paddingBottom={1}
+                fontWeight={textFontWeight}
+                variant={textVariant}
+              >
+                {text}
+              </Text>
+              <Text
+                paddingBottom={1}
+                fontWeight={textFontWeight}
+                variant={textVariant}
+              >
+                {date}
+              </Text>
+            </Box>
+            <Box
+              display="flex"
+              flexDirection="row"
               alignItems={icon ? 'center' : 'flexEnd'}
             >
               {icon && (
@@ -193,7 +218,7 @@ const Component = forwardRef<
               fontWeight={textFontWeight}
               variant={textVariant}
             >
-              {text}
+              {subtext}
             </Text>
             {hasTags && (
               <Box paddingTop={3}>

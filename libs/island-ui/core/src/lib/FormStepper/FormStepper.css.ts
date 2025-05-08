@@ -25,7 +25,7 @@ export const tag = style({
 export const list = style({
   display: 'flex',
   flexDirection: 'row',
-
+  
   padding: '20px 24px',
 
   backgroundColor: theme.color.purple100,

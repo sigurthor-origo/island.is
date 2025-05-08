@@ -62,7 +62,7 @@ export const Section: FC<
         marginLeft: isSmallScreen && isComplete ? `-${containerWidth}px` : '0',
       }}
     >
-      <Box display="flex" alignItems="center" marginBottom={[0, 0, 1]}>
+      <Box display="flex" alignItems="center" marginBottom={[0, 0, 0]}>
         <Box paddingTop={[0, 0, 2]}>
           <SectionNumber
             theme={theme}

@@ -1,0 +1,28 @@
+{
+  "name": "utbod-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/utbod-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["utbod"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/utbod-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "utbod:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "utbod:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "utbod:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
